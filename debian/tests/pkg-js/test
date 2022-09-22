@@ -1,0 +1,5 @@
+if [ ! -e node_modules/babel-plugin-annotate-pure-calls ]; then
+	mkdir -p node_modules
+	ln -s ../debian/build_modules/babel-plugin-annotate-pure-calls node_modules
+fi
+BABEL_ENV=cjs mocha --require @babel/register

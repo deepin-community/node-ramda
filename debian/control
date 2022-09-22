@@ -1,0 +1,31 @@
+Source: node-ramda
+Section: javascript
+Priority: optional
+Maintainer: Debian Javascript Maintainers <pkg-javascript-devel@lists.alioth.debian.org>
+Uploaders: Sruthi Chandran <srud@disroot.org>
+Build-Depends:
+ , debhelper-compat (= 13)
+ , dh-sequence-nodejs
+ , node-babel7
+ , mocha <!nocheck>
+ , node-sinon <!nocheck>
+Standards-Version: 4.6.0
+Vcs-Browser: https://salsa.debian.org/js-team/node-ramda
+Vcs-Git: https://salsa.debian.org/js-team/node-ramda.git
+Homepage: https://ramdajs.com/
+Testsuite: autopkgtest-pkg-nodejs
+Rules-Requires-Root: no
+
+Package: node-ramda
+Architecture: all
+Depends: ${misc:Depends}
+Multi-Arch: foreign
+Description: practical functional library for JavaScript programmers
+ A library designed specifically for a functional programming style, one that
+ makes it easy to create functional pipelines, one that never mutates user data.
+ .
+ The primary distinguishing features of Ramda are:
+  * Ramda takes the function first, and the data last
+  * Ramda methods are automatically curried
+ .
+ Node.js is an event-based server-side JavaScript engine.
